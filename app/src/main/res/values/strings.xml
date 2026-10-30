@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Personal Finance &amp; Expense Tracker</string>
+    <string name="app_name_moneyflow">MoneyFlow</string>
+    <string name="app_version_name">MoneyFlow v1.0.0</string>
+    <string name="app_version_code">v1.0.0</string>
+    <string name="developer_name">MD. Abdullah Jovayer</string>
+    <string name="developer_role">Software Developer</string>
+    <string name="developer_email">mdabdullajovayer@gmail.com</string>
+    <string name="developer_location">Dhaka, Bangladesh</string>
+    <string name="developer_github">GitHub</string>
+    <string name="developer_linkedin">LinkedIn</string>
+</resources>

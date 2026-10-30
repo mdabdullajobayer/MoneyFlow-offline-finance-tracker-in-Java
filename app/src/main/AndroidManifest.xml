@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.security.RegistrationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.security.LockActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.security.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.management.OwnerManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.management.AccountManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.management.CategoryManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.management.IncomeSourceManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.management.PaymentMethodManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.management.BudgetPlanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.transaction.TransactionHistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.transaction.AddEditTransactionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.reports.ReportsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.management.SmsSenderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <activity
+            android:name=".ui.management.SmsReviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PersonalFinanceExpenseTrackerAndroidApp" />
+
+        <receiver
+            android:name=".receiver.SmsBroadcastReceiver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
